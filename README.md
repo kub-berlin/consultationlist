@@ -13,14 +13,18 @@ We are starting a new project here to do the following:
    - The edit mode is left after 30 seconds of inactivity.
    - Viewers see the changes only after the editor has left the edit mode.
 6. **Deployment:** We use one or several Dockerfiles to containerize the project. Each release creates a new image.
-7. **Technologies:** We could use Vue.js (Vuetify or Quasar) in the frontend and Django REST Framework (DRF) in the backend. However, it is worth considering other, possibly simpler technologies for our needs. We also need a socket connection (e.g. WebSocket) between the devices and the server to track user activity live.
+7. **Technologies:** See Phase 1 for the stack. We also need a socket connection (e.g. WebSocket) between the devices and the server to track user activity live.
 8. **Testing:** We write integration tests only for the most important functionality in the frontend (Vitest) and the backend (pytest).
 
 ## Phases
 
 ### Phase 1: Foundation
 
-- Decide on the technology stack (see item 7).
+- **Technology stack:**
+  - Frontend: Vue 3 with TypeScript and plain CSS.
+  - Row reordering: SortableJS via VueDraggablePlus.
+  - Date picker: native HTML `<input type="date">`.
+  - Backend: Django REST Framework (DRF).
 - Set up the repository structure, local development environment and basic CI.
 - Define the hardcoded table structure and the data model.
 - Build the backend API for listing, adding, editing, deleting and reordering rows.
