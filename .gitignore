@@ -1,0 +1,7 @@
+**/data*
+**/.env*
+!.env.dev
+!.env.test
+.local
+**/.venv
+.history
