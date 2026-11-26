@@ -95,3 +95,5 @@ make makemigrations  # Create migrations locally using .env.dev
 
 The default test target excludes tests marked `wip` and treats no tests collected
 as success. `make test-only` runs tests marked `only`.
+
+GitHub Actions runs `make lint` and `make test` on pushes and pull requests.

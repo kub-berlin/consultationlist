@@ -26,7 +26,7 @@ Keep the test suite small and give new contributors a short guide.
 ### Phase 1: Foundation
 
 - [x] Decide on the [technology stack](#technology-stack).
-- [ ] Set up the repository structure, local development environment and basic CI.
+- [x] Set up the repository structure, local development environment and basic CI.
 - [x] Define the hardcoded table structure and the data model.
 - [ ] Build the backend API for listing, adding, editing, deleting and reordering rows.
 - [ ] Add simple role handling (editor and viewer) without SSO, e.g. local accounts.
